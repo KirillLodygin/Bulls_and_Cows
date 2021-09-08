@@ -1,0 +1,237 @@
+@font-face {
+    font-family: Taxonomic;
+    src: url("./assets/fonts/taxonomic/Taxonomic.eot?") format("eot"),
+        url("./assets/fonts/taxonomic/Taxonomic.woff") format("woff"),
+        url("./assets/fonts/taxonomic/Taxonomic.ttf") format("truetype"),
+        url("./assets/fonts/taxonomic/Taxonomic.svg#Taxonomic") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: WesternGrungybyMartavanEck;
+    src: url("./assets/fonts/western_grungy_by_marta_van_eck/Western_Grungy_by_Marta_van_Eck_DEMO.eot?") format("eot"),
+        url("./assets/fonts/western_grungy_by_marta_van_eck/Western_Grungy_by_Marta_van_Eck_DEMO.woff") format("woff"),
+        url("./assets/fonts/western_grungy_by_marta_van_eck/Western_Grungy_by_Marta_van_Eck_DEMO.ttf") format("truetype"),
+        url("./assets/fonts/western_grungy_by_marta_van_eck/Western_Grungy_by_Marta_van_Eck_DEMO.svg#WesternGrungybyMartavanEck") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: SakabeAnimal03;
+    src: url("./assets/fonts/sakabeanimal03/Sakabe-Animal03.eot?") format("eot"),
+        url("./assets/fonts/sakabeanimal03/Sakabe-Animal03.woff") format("woff"),
+        url("./assets/fonts/sakabeanimal03/Sakabe-Animal03.ttf") format("truetype"),
+        url("./assets/fonts/sakabeanimal03/Sakabe-Animal03.svg#SakabeAnimal03") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: FounaBC;
+    src: url("./assets/fonts/founa_bc/FOUNA.eot?") format("eot"),
+        url("./assets/fonts/founa_bc/FOUNA.woff") format("woff"),
+        url("./assets/fonts/founa_bc/FOUNA.ttf") format("truetype"),
+        url("./assets/fonts/founa_bc/FOUNA.svg#FounaBC") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: StratosSkyeng;
+    src: url(./assets/fonts/stratosskyengweb/stratosskyengweb-bold.woff2) format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: fallback;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+#enter-the-game {
+    height: 100vh;
+    background: url("./assets/img/prairie.jpg") #f2eee9 no-repeat;
+    background-size: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 100px;
+}
+
+h1 {
+    font-family: WesternGrungybyMartavanEck, serif;
+    min-width: 1100px;
+    font-size: 75px;
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+.bull {
+    font-family: Taxonomic;
+    font-size: 80px;
+    color: #fff6d4;
+    margin-bottom: 20px;
+    text-shadow: 1px 0 1px #000,
+    0 1px 1px #000,
+    -1px 0 1px #000,
+    0 -1px 1px #000;
+}
+
+.choose-level {
+    font-family: WesternGrungybyMartavanEck, serif;
+    font-size: 55px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    margin-bottom: 60px;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+.selection-button {
+    font-family: StratosSkyeng, 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 10px 15px;
+    border: 1px solid #11ffee00;
+    box-shadow: 1px 1px 1px #000;
+    color: #000;
+    background-color: #fff6d4;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    width: 210px;
+}
+
+.selection-button:hover {
+    background-color: #ff926e;
+}
+
+#selection-buttons-block .selection-button:nth-child(2) {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.selection-button p {
+    display: inline-block;
+}
+
+.btn-icon {
+    font-family: SakabeAnimal03;
+    font-size: 55px;
+}
+
+#game-field {
+    font-family: StratosSkyeng, 'Helvetica Neue', sans-serif;
+    height: 100vh;
+    background: url("./assets/img/prairie1.jpg") #f2eee9 no-repeat;
+    background-size: 100%;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#challenge {
+    font-size: 35px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+#captured-bulls {
+    width: 600px;
+    height: 60px;
+    background: rgba(245, 245, 220, 0.5);
+    box-sizing: border-box;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    font-family: FounaBC;
+    color: #000;
+    font-size: 50px;
+    text-shadow: 1px 0 1px #000,
+    0 1px 1px #000,
+    -1px 0 1px #000,
+    0 -1px 1px #000;
+    text-align: left;
+    white-space: pre;
+}
+
+#dialog {
+    width: 600px;
+    height: 250px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    background-color: rgba(245, 245, 220, 0.5);
+    border: 1px solid #11ffee00;
+    font-family: StratosSkyeng, 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+}
+
+#dialog::-webkit-scrollbar {
+    width: 10px;
+}
+
+#dialog::-webkit-scrollbar-track {
+    background: #11ffee00;        /* color of the tracking area */
+}
+
+#dialog::-webkit-scrollbar-thumb {
+    background-color: rgba(245, 245, 220, 0.5);
+    border-radius: 10px;
+    border: 3px solid rgb(245, 245, 220);
+}
+
+.answer-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label {
+    font-size: 28px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    margin-bottom: 5px;
+}
+
+#answer {
+    width: 430px;
+    height: 30px;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background: #fff6d4;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+#answer-buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#answer-buttons .selection-button:nth-child(1) {
+    margin-right: 10px;
+}
+
+#restart-game {
+}

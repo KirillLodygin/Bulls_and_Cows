@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bulls and Cows</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+	<section id="enter-the-game">
+		<h1>&#66; &#85; &#76; &#76; &#83; &#91;&#91;&#91; &#65; &#78; &#68; &#91;&#91;&#91; &#67; &#79; &#87; &#83;</h1>
+
+		<p><span class="bull">&#111;&#123;</span> <span class="bull">&#123;&#111;&#123;</span> <span class="bull">&#123;&#111;</span></p>
+
+		<h2 class="choose-level">&#67; &#72; &#79; &#79; &#83; &#69;&#91;&#91;&#91;&#68; &#73; &#70; &#70; &#73; &#67; &#85; &#76; &#84; &#89;</h2>
+
+		<div id="selection-buttons-block">
+			<div class="selection-button" data-diff="easily"><p class="btn-icon">&#101;&#160;</p><p>EASILY</p></div>
+			<div class="selection-button" data-diff="hard"><p class="btn-icon">&#105;&#160;</p><p>HARD</p></div>
+			<div class="selection-button" data-diff="very-difficult"><p class="btn-icon">&#108;&#160;</p><p>VERY DIFFICULT</p></div>
+		</div>
+
+	</section>
+
+	<section id="game-field">
+
+		<h2 id="challenge"></h2>
+
+		<p id="captured-bulls"></p>
+
+		<label for="dialog"></label>
+		<textarea id="dialog" readonly></textarea>
+
+		<div class="answer-block">
+			<div><label for="answer">Каков твой вариант?</label></div>
+			<div>
+				<div><input type="text" id="answer"></div>
+				<div id="answer-buttons">
+					<div class="selection-button" id="reply"><p class="btn-icon">&#74;&#160;</p><p>Ловить быков!</p></div>
+					<div class="selection-button" id="pass"><p class="btn-icon">&#78;&#160;</p><p>Сдаться</p></div>
+					<div class="selection-button" id="restart"><p class="btn-icon">&#100;&#160;</p><p>Ещё разок!</p></div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+<script src="script.js"></script>
+</body>
+</html>
